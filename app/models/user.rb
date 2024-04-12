@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  enum :status, [:active, :archived], validate: true
+  enum :status, [:author, :guest], validate: true
 
   has_many :books
 
